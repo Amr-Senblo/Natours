@@ -2,11 +2,11 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 
 // for example console.log(x);   and x is not defind
-process.on('uncaughtException', err => {
-  console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');
-  console.log(err.name, err.message);
-  process.exit(1);
-});
+// process.on('uncaughtException', err => {
+//   console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');
+//   console.log(err.name, err.message);
+//   process.exit(1);
+// });
 
 const app = require('./app');
 
